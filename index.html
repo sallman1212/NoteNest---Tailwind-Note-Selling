@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NoteNest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <div class="bg-indigo-600 text-white px-5 py-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">NoteNest</h1>
+      <ul class="flex gap-5 text-sm">
+        <li><a href="#home" class="hover:underline">Home</a></li>
+        <li><a href="#notes" class="hover:underline">Browse Notes</a></li>
+        <li><a href="#upload" class="hover:underline">Upload</a></li>
+        <li><a href="#faq" class="hover:underline">FAQ</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="home" class="bg-white py-14 px-6 text-center">
+    <h2 class="text-4xl font-bold mb-3 text-indigo-700">Buy & Sell Notes Easily</h2>
+    <p class="text-sm max-w-xl mx-auto text-gray-600">A project built by students for students. Share your notes, find someone else's, and help each other pass exams.</p>
+  </div>
+
+  <div id="notes" class="max-w-6xl mx-auto mt-16 px-5">
+    <h2 class="text-2xl font-semibold mb-8 text-center">Popular Notes</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <div class="bg-white rounded shadow p-4">
+        <h3 class="text-lg font-bold">Class 10 Biology (CBSE)</h3>
+        <p class="text-sm mt-2">Full handwritten notes by Ayaan. Diagrams included.</p>
+        <p class="mt-2 text-sm text-gray-500">₹25 • PDF • 12 pages</p>
+        <button class="mt-3 bg-indigo-600 text-white text-sm px-4 py-1 rounded">Download</button>
+      </div>
+
+      <div class="bg-white rounded shadow p-4">
+        <h3 class="text-lg font-bold">11th Economics Notes</h3>
+        <p class="text-sm mt-2">Typed + diagrams. Includes extra case studies.</p>
+        <p class="mt-2 text-sm text-gray-500">₹30 • PDF • 18 pages</p>
+        <button class="mt-3 bg-indigo-600 text-white text-sm px-4 py-1 rounded">Download</button>
+      </div>
+
+      <div class="bg-white rounded shadow p-4">
+        <h3 class="text-lg font-bold">History – Revolutions (Class 9)</h3>
+        <p class="text-sm mt-2">Only key points. Good for revision.</p>
+        <p class="mt-2 text-sm text-gray-500">Free • Image Scan • 5 pages</p>
+        <button class="mt-3 bg-gray-700 text-white text-sm px-4 py-1 rounded">View</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="upload" class="max-w-3xl mx-auto mt-20 px-5 text-center">
+    <h2 class="text-xl font-semibold mb-3">Share Your Notes</h2>
+    <p class="text-sm text-gray-600 mb-6">Got notes others can use? Upload them here. You can offer them free or charge a small price.</p>
+    <form class="bg-white p-6 rounded shadow space-y-4 text-left max-w-md mx-auto">
+      <input type="text" class="w-full border px-3 py-2 rounded text-sm" placeholder="Your Name" />
+      <input type="text" class="w-full border px-3 py-2 rounded text-sm" placeholder="Note Title (e.g. Class 11 Physics - Chapter 3)" />
+      <input type="file" class="w-full border px-3 py-2 rounded text-sm" />
+      <input type="number" class="w-full border px-3 py-2 rounded text-sm" placeholder="Price in ₹ (0 for free)" />
+      <button class="bg-indigo-700 text-white px-4 py-2 rounded text-sm">Upload Note</button>
+    </form>
+  </div>
+
+  <div id="faq" class="max-w-4xl mx-auto mt-20 px-5">
+    <h2 class="text-xl font-bold mb-4">FAQ</h2>
+    <div class="space-y-4 text-sm">
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold">Who can upload notes?</h4>
+        <p>Anyone. We encourage school and college students to share their own work.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold">How do I get paid?</h4>
+        <p>Right now it's a project site, so everything is free. But you can use Paytm/UPI for external sharing.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-semibold">Is this legal?</h4>
+        <p>Yes, as long as you don’t copy from books. Share your own original material.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="max-w-xl mx-auto mt-20 px-4 text-center">
+    <h2 class="text-xl font-semibold mb-2">Need Help?</h2>
+    <form class="bg-white p-6 rounded shadow space-y-4 text-left max-w-md mx-auto">
+      <input type="text" placeholder="Your Name" class="w-full border px-3 py-2 rounded text-sm" />
+      <textarea placeholder="Your Question" rows="3" class="w-full border px-3 py-2 rounded text-sm"></textarea>
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded text-sm">Send</button>
+    </form>
+  </div>
+
+  <footer class="mt-20 bg-indigo-900 text-white text-center py-4 text-xs">
+    © 2025 NoteNest • Built for HackClub by Salman • This is a learning project.
+  </footer>
+
+</body>
+</html>
